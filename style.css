@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-image: url("nayanthara.jpg");
+    background-color:black;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    font-size: 25px;
+   
+    color:black;
+}
+.box{
+
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.box .percent{
+    position: relative;
+    width:150px;
+    height: 150px;
+}
+.box .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+}
+.box .percent svg circle{
+    width: 500px;
+    height: 300px;
+    fill: none;
+    stroke-width: 2;
+    stroke: white;
+    transform: translate(5px,5px);
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+}
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke:white;
+    }
+    .box .percent svg circle:nth-child(2){
+        stroke-dashoffset: calc(440-(440*50)/100);
+        stroke: rgb(233, 23, 121);
+        }
+        .box .percent svg circle:nth-child(3){
+            stroke-dashoffset: calc(440-(440*50)/100);
+            stroke: #00ff43;  
+        }
+        .box .percent svg circle:nth-child(4){
+            stroke-dashoffset: calc(440-(440*50)/100);
+            stroke: #ff04f7;
+        }
+.box .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .percent .number h2{
+    font-size: 48px;
+    color: white;
+}
+.box .percent .number h2 span{
+    font-size: 24px;
+}
+.box .text{
+    padding: 10px 0 0;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+    
+.box .percent .number{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        z-index: 1000;
+    
+    }
+    
+    .container{
+        padding-top: 50px;
+        padding-left: 190px;
+        position: relative;
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .container .card{
+        position: relative;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .container .card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,.5);
+    }
+    
+    .percent .number{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+}
+.text{
+    position: relative;
+    color:white;
+font-weight: 700;
+font-size: 18px;
+letter-spacing: 1px;
+text-transform: uppercase;
+transition: 0.5s;
+}
+.card:hover .text{
+color: #777;
+}
+.margin
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+overflow: hidden;
+}
+
+.topnav a {
+float: right;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+}
+
+.topnav a.active {
+color: white;
+}
+.heading{
+    color: white;
+padding-top: 80px;
+}
+.actor{
+   
+    height: 100%;
+display: grid;
+box-sizing: border-box;
+place-items: center;
+
+}
+.slider{
+    max-width: 1150px;
+    display: flex;
+}
+.slider .card{
+    background-color:rgb(7, 1, 26);
+    flex: 1;
+    margin: 0 10px;
+    box-shadow:10px 5px rgb(9, 9, 128);
+border-radius: 5px 5px;
+
+}
+.slider .card .img{
+    height: 300px;
+    width: 100%;
+}
+.slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slider .card .content{
+    padding:  10px 20px;
+}
+.card .content .title{
+    font-size:25px ;
+    font-weight: 600;
+}
+.card .content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+
+}
+.card .content p{
+    text-align: justify;
+    margin: 10px 0;
+   
+}
+.card .content .btn{
+    margin: 10px 0;
+    color: rgb(233, 19, 119);
+
+}
+.btn{
+    text-align: left;
+}
+.card .content .btn button{
+color:white;
+transition: 0.2s;
+padding: 10px 5px;
+border: none;
+cursor: pointer;
+
+
+}
+.card .content .btn button:hover{
+    transform:scale(0.9);
+}
+.sub-title{
+    padding: 1px 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: yellow;
+    float: left;
+}
+.title{
+    color: white;
+    padding: 5px 5px;
+    font-size: 10px;
+    font-variant: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.upcoming{
+color: white;
+text-align: left;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-left: 50px;
+padding-bottom: 5px;
+padding-top:250px;
+}
+.social{
+    padding: 10px 10px 10px;
+}
+.testimonals{
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    text-align: center;
+    
+
+}
+.inner{
+max-width: 1200px;
+margin: auto;
+overflow: hidden;
+padding: 0 20px;
+}
+.border{
+    margin: 26px auto;
+    width: 160px;
+    height: 5px;
+
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15PX;
+}
+.testimonal{
+    background:black;
+    padding: 30px;
+    box-shadow:10px 5px red;
+    border-radius: 5px;
+}
+.testimonal img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.rating{
+    
+    margin-bottom: 20px;
+}
+.re{
+float: left;
+}
+@media screen and (max-width:960px){
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
